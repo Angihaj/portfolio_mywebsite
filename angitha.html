@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angitha George | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero{
+    max-width:800px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:6px solid #fff;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero h2{
+    font-weight:300;
+    margin:10px 0;
+}
+
+.hero p{
+    margin:20px 0;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    margin:10px;
+    background:#fff;
+    color:#1e3c72;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+nav{
+    position:sticky;
+    top:0;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:15px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+section{
+    padding:70px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#1e3c72;
+    font-size:2rem;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.timeline{
+    border-left:4px solid #2a5298;
+    padding-left:20px;
+}
+
+.timeline-item{
+    margin-bottom:30px;
+}
+
+.timeline-item h3{
+    color:#2a5298;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.skill{
+    background:#2a5298;
+    color:#fff;
+    padding:12px 20px;
+    border-radius:25px;
+}
+
+footer{
+    background:#1e3c72;
+    color:#fff;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <img src="https://via.placeholder.com/180" alt="Angitha George">
+        <h1>Prof. Angitha George</h1>
+        <h2>Assistant Professor | Computer Science & Engineering</h2>
+        <p>
+            Passionate educator and researcher with expertise in Computer Science,
+            Data Science, IoT, and Image Processing. Dedicated to inspiring students
+            and fostering innovation through teaching and research.
+        </p>
+
+        <a href="#about" class="btn">Explore</a>
+        <a href="https://sjcetpalai.ac.in/angitha-george-cse/" class="btn" target="_blank">
+            Faculty Profile
+        </a>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+        <p>
+            I am <strong>Prof. Angitha George</strong>, Assistant Professor in the
+            Department of Computer Science & Engineering at St. Joseph's College
+            of Engineering and Technology, Palai. I joined the institution in July 2011.
+            My academic interests include Data Science, IoT, Image Processing,
+            Artificial Intelligence, and Computer Networks.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h3>M.E. in Computer Science & Engineering</h3>
+            <p>PSNA College, Dindigul</p>
+            <p>Anna University | 2011</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>B.Tech in Computer Science & Engineering</h3>
+            <p>College of Engineering, Kidangoor</p>
+            <p>CUSAT | 2009</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Areas of Interest</h2>
+
+    <div class="skills">
+        <div class="skill">Data Science</div>
+        <div class="skill">Python</div>
+        <div class="skill">IoT</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Image Processing</div>
+        <div class="skill">Computer Networks</div>
+        <div class="skill">Web Technologies</div>
+        <div class="skill">Research</div>
+    </div>
+</section>
+
+<section id="publications">
+    <h2 class="section-title">Selected Publications</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>DNA Color Vector</h3>
+            <p>Identity of the Legitimate User</p>
+        </div>
+
+        <div class="card">
+            <h3>Super Resolution and Denoising of Images</h3>
+            <p>Via Dictionary Learning</p>
+        </div>
+
+        <div class="card">
+            <h3>Survey on Encryption Approaches</h3>
+            <p>For Secure Face Biometrics</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="training">
+    <h2 class="section-title">Professional Development</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Practical Data Science FDP</h3>
+            <p>KTU Sponsored FDP</p>
+        </div>
+
+        <div class="card">
+            <h3>Business Analytics & Data Science</h3>
+            <p>KTU Sponsored FDP</p>
+        </div>
+
+        <div class="card">
+            <h3>IoT Based Manufacturing</h3>
+            <p>AICTE Sponsored STTP</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="card">
+        <p><strong>Email:</strong> angitha.george@sjcetpalai.ac.in</p>
+        <p><strong>Phone:</strong> +91 9495664428</p>
+        <p><strong>Department:</strong> Computer Science & Engineering</p>
+        <p><strong>Institution:</strong> St. Joseph's College of Engineering and Technology, Palai</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Prof. Angitha George | Portfolio Website</p>
+</footer>
+
+</body>
+</html>
